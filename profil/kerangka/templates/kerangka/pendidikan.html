@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pendidikan</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}"> 
+</head>
+<body>
+    <div class="navbar">
+        <a href="{% url 'home' %}">Home</a>
+        <a href="{% url 'profil_umum' %}">Profil Umum</a>
+        <a href="{% url 'pendidikan' %}">Pendidikan</a>
+        <a href="{% url 'pengalaman_kerja' %}">Pengalaman Kerja</a>
+        <a href="{% url 'sosial_media' %}">Sosial Media</a>
+    </div>
+
+    <h1>Pendidikan</h1>
+    <p>Berikut adalah riwayat pendidikan saya:</p>
+    <ul>
+        <li>SD Negeri 2 Cibdak</li>
+        <li>SMP Negeri 1 Cibdak</li>
+        <li>SMA Negeri 1 Cibadak</li>
+        <li>Universitas Pendidikan Indonesia - Pendidikan Ilmu Komputer</li>
+    </ul>
+</body>
+</html>

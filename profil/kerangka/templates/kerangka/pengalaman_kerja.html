@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pengalaman Kerja</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}"> 
+</head>
+<body>
+    <div class="navbar">
+        <a href="{% url 'home' %}">Home</a>
+        <a href="{% url 'profil_umum' %}">Profil Umum</a>
+        <a href="{% url 'pendidikan' %}">Pendidikan</a>
+        <a href="{% url 'pengalaman_kerja' %}">Pengalaman Kerja</a>
+        <a href="{% url 'sosial_media' %}">Sosial Media</a>
+    </div>
+
+    <h1>Pengalaman Kerja</h1>
+    <p>Berikut adalah pengalaman kerja saya:</p>
+    <ul>
+        <li>Magang di Perusahaan ABC</li>
+        <li>Freelancer Web Developer</li>
+    </ul>
+</body>
+</html>
